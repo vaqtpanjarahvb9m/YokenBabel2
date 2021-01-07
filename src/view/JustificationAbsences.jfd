@@ -1,0 +1,49 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:57:p, par l {comp label4:::p::p, comp label5:::p::p, comp label6:::p::p}, space :p:68:p, par t:::p {comp comboBox4::l::232:x, comp comboBox3::l::232:x, comp comboBox2:::p:230:p}}, seq l {space :p:61:p, par t {comp button1:::p:145:p, par l {comp label2:::p::p, comp textField1:::p:693:p}}}}, space ::29:x}}"
+			"$verticalGroup": "par l {seq t {space :p:49:p, par b {comp comboBox2::b:p::p, comp label4::b:p::p}, space :p:35:p, par b {comp label5::b:p::p, comp comboBox3::b:p::p}, space :p:37:p, par b {comp comboBox4::b:p::p, comp label6::b:p::p}, space ::71:x, comp label2:::p::p, space s:::p, comp textField1:::p:254:p, space s:::p, comp button1:::p:44:p, space :p:23:p}}"
+		} ) {
+			name: "this"
+			"title": "JUSTIFICATION D'ABSENCE - KORNOEIL"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "JUSTIFICATION :"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "SAUVEGARDER"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "SESSION :"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "ÉLÈVE :"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox3"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "ABSENCE :"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 785, 670 )
+		} )
+	}
+}

@@ -1,0 +1,69 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:48:p, par l {seq l {space :p:147:p, comp vSpacer1:::p::p}, seq l {comp label1:::p::p, space :p:27:p, comp comboBox1:::p:292:p}, comp scrollPane1::l:p:973:p}, space ::47:x}}"
+			"$verticalGroup": "par l {seq t {space ::65:x, par b {comp label1::b:p::p, comp comboBox1::b:p::p}, space :p:3:p, comp vSpacer1:::p::p, space :p:31:p, comp scrollPane1:::p:534:p, space :p:44:p}}"
+		} ) {
+			name: "this"
+			"title": "LISTES ETUDIANTS - KORNOEIL"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "SESSION :"
+			} )
+			add( new FormComponent( "com.jformdesigner.designer.wrapper.VSpacer" ) {
+				name: "vSpacer1"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBox1"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox1ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "TabEtudiant"
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Absences"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "Gestion des absences"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "Justification d'absences"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "Analyses"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem12"
+						"text": "Absences élève (par mois)"
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Absences élève (par trimestre)"
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "Liste des étudiants"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "Liste des étudiants par session"
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1070, 760 )
+		} )
+	}
+}

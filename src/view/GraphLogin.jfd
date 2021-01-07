@@ -1,0 +1,50 @@
+JFDML JFormDesigner: "6.0.0.0.84" Java: "1.8.0_112-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:135:p, par l {comp label2:::p::p, comp label1:::p::p, comp btnValider:::p:142:p}, space :p:51:p, par l:::p {seq {space :p:49:p, comp btnAnnuler:::p:138:p}, comp identifiant::::197:x, comp password::l::197:x}, space ::103:x}}"
+			"$verticalGroup": "par l {seq l {space :p:79:p, par b {comp label1::b:p::p, comp identifiant::b:p:29:p}, space :p:86:p, par b {comp label2::b:p::p, comp password::b:p:29:p}, space ::70:x, par b {comp btnAnnuler::b:p:61:p, comp btnValider::b:p:61:p}, space :p:88:p}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "Tahoma", 0, 24 )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "identifiant"
+				"font": new java.awt.Font( "Tahoma", 0, 18 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Identifiant"
+				"font": new java.awt.Font( "Tahoma", 0, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Mot de Passe"
+				"font": new java.awt.Font( "Tahoma", 0, 24 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnAnnuler"
+				"text": "Annuler"
+				"font": &Font0 new java.awt.Font( "Tahoma", 0, 20 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnValider"
+				"text": "Valider"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnValiderActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnValiderActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clickValider", true ) )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyPressed", "btnValiderKeyPressed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+				"font": new java.awt.Font( "Tahoma", 0, 18 )
+				addEvent( new FormEvent( "java.awt.event.KeyListener", "keyTyped", "passwordKeyTyped", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 630, 470 )
+		} )
+	}
+}
