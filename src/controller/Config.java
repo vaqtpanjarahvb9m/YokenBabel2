@@ -1,22 +1,16 @@
 package controller;
 
 public class Config {
-	
-	String bdd = "kornoeil_db";
-	//Connexion locale BDD
-	String username = "root";
-	String password = "root";
-	String port = "8889";
-	String host = "jdbc:mysql://localhost:";
-	//String username = "8251991";
-	//String password = "T6egd7@@";
-	//String host = "jdbc:mysql://";
-	//String url = "jdbc:mysql://https://8251991.admin.dc0.gpaas.net/phpmyadmin/:3306/kornoeil_db";
-	//https://8251991.admin.dc0.gpaas.net/phpmyadmin First
-	//String url = this.host+this.port+"/"+this.bdd;
+
+	String bdd = "summe201_kornoeil";
+	String username = "summe201_comerci";
+	String password = "Azertyuiop 01";
+	String port = "3306";
+	String host = "jdbc:mysql://69.28.199.250:";
+
 	String url = this.host+this.port+"/"+this.bdd;
 	String key = "qwazerty";
-	
+
 	public Config(){
 	}
 
