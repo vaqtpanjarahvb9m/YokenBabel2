@@ -19,7 +19,7 @@ import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
 /**
- * @author yok en
+ * @author yoken & timothée
  */
 public class GraphLogin extends JFrame {
     public GraphLogin() {

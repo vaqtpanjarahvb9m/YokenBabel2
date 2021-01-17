@@ -10,7 +10,7 @@ import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
 /**
- * @author yok en
+ * @author Yoken Babel & Timothée Montias
  */
 public class GestionCours extends JFrame {
     public GestionCours() {

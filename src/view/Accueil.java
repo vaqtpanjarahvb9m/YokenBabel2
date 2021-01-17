@@ -14,13 +14,13 @@ import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
 /**
- * @author Yoken Babel
+ * @author Yoken Babel & Timothée Montias
  */
 public class Accueil extends JFrame {
     public Accueil() {
         initComponents();
     }
-    public GestionAbsences(
+    //public GestionAbsences(){}
 
     // Modification du la vue
     private void changePanel(JPanel panel) {
@@ -38,8 +38,8 @@ public class Accueil extends JFrame {
             frame.setSize(1024, 768);
             frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             frame.setResizable(false);
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (Exception pe) {
+            pe.printStackTrace();
         }
     }
 
@@ -75,6 +75,7 @@ public class Accueil extends JFrame {
                 //---- menuItem2 ----
                 menuItem2.setText("Gestion des absences");
                 menuItem2.addMouseListener(new MouseAdapter() {
+                    @Override
                     public void mouseClicked(MouseEvent e) {
                         menuItem2MouseClicked(e);
                     }
