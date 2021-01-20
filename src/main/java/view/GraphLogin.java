@@ -14,7 +14,7 @@ import controller.Config;
 import controller.CryptePass;
 import controller.Login;
 
-import com.alee.laf.WebLookAndFeel;
+//import com.alee.laf.WebLookAndFeel;
 import org.jdesktop.layout.GroupLayout;
 import org.jdesktop.layout.LayoutStyle;
 
@@ -43,12 +43,12 @@ public class GraphLogin extends JFrame {
         EventQueue.invokeLater(new Runnable() {
             public void run() {
                 try {
-                    WebLookAndFeel.install();
+                  //  WebLookAndFeel.install();
                     GraphLogin frame = new GraphLogin();
                     frame.setVisible(true);
                     frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
                 } catch (Exception e) {
-                    e.printStackTrace();
+                   // e.printStackTrace();
                 }
             }
         });

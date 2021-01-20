@@ -1,9 +1,6 @@
 package view;
 
-import java.awt.*;
 import javax.swing.*;
-import com.alee.laf.menu.*;
-import net.miginfocom.swing.*;
 
 /**
  * Created by anonybook on 23/03/2017.

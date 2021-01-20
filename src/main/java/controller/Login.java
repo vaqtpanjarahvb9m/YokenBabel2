@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.PreparedStatement;
+import java.sql.SQLException;
 
 import javax.swing.*;
 
@@ -21,7 +22,7 @@ public class Login {
 		this.password = password;
 	}
 	
-	public boolean loginQuery(){
+	public boolean loginQuery() throws ClassNotFoundException, SQLException{
 		Connection connected = (Connection) Connexion.connect();
 		String query = "SELECT Username, Password FROM tbUsers WHERE Username = '"+this.id+"' AND Password = '"+this.password+"'";
 		

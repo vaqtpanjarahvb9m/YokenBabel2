@@ -6,3 +6,4 @@
 # Others
 bin/*
 lib/
+/target/

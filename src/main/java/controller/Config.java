@@ -4,7 +4,7 @@ public class Config {
 
 	String bdd = "summe201_kornoeil";
 	String username = "summe201_comerci";
-	String password = "Azertyuiop 01";
+	String password = "Azetyuiop 01";
 	String port = "3306";
 	String host = "jdbc:mysql://69.28.199.250:";
 
