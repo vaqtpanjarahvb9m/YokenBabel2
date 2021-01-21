@@ -1,20 +1,30 @@
-package controller;
+    package controller;
 
 public class Config {
 
-	String bdd = "summe201_kornoeil";
-	String username = "summe201_comerci";
-	String password = "Azetyuiop 01";
-	String port = "3306";
-	String host = "jdbc:mysql://69.28.199.250:";
+        //En Ligne
+//	String bdd = "summe201_kornoeil";
+//	String username = "summe201_comerci";
+//	String password = "Azertyuiop 01";
+//	String port = "3306";
+//	String host = "jdbc:mysql://69.28.199.250";
+//        
+        //En Local
+        String bdd = "summe201_kornoeil";
+        String username = "root";
+	String password = "root";
+	String port = "8889";
+	String host = "jdbc:mysql://localhost";
+        String url = "jdbc:mysql://localhost:8889/summe201_kornoeil";
+        
 
-	String url = this.host+this.port+"/"+this.bdd;
+	//String url = this.host+":"+this.port+"/"+this.bdd;
 	String key = "qwazerty";
 
 	public Config(){
 	}
 
-	public Config(String bdd, String username, String password, String port, String host) {
+	public Config(String bdd, String username, String password, String port, String host, String url) {
 		this.bdd = bdd;
 		this.username = username;
 		this.password = password;
@@ -22,8 +32,8 @@ public class Config {
 		//this.passwordPMA = passwordPMA;
 		this.port = port;
 		this.host = host;
-		this.url = host+port+"/";
-	}
+		this.url = host+":"+port+"/";	
+}
 
 	public String getBdd() {
 		return bdd;
@@ -48,22 +58,6 @@ public class Config {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	/*public String getUsernamePMA() {
-		return usernamePMA;
-	}
-
-	public void setUsernamePMA(String usernamePMA) {
-		this.usernamePMA = usernamePMA;
-	}
-
-	public String getPasswordPMA() {
-		return passwordPMA;
-	}
-
-	public void setPasswordPMA(String passwordPMA) {
-		this.passwordPMA = passwordPMA;
-	}*/
 
 	public String getPort() {
 		return port;

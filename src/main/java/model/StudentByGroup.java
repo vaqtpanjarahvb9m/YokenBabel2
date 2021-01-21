@@ -3,23 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model.DTO;
+package model;
 
 /**
  *
  * @author faulken
  */
 public class StudentByGroup {
-    
+   
    private String Name; 
    private String FirstName;  
-   private String Categories;
    private String TypeGr;   
 
     public StudentByGroup(String Name, String FirstName, String Categories, String TypeGr) {
         this.Name = Name;
         this.FirstName = FirstName;
-        this.Categories = Categories;
         this.TypeGr = TypeGr;
     }
 
@@ -37,14 +35,6 @@ public class StudentByGroup {
 
     public void setFirstName(String FirstName) {
         this.FirstName = FirstName;
-    }
-
-    public String getCategories() {
-        return Categories;
-    }
-
-    public void setCategories(String Categories) {
-        this.Categories = Categories;
     }
 
     public String getTypeGr() {

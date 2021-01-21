@@ -15,7 +15,7 @@ import controller.Connexion;
 import java.awt.HeadlessException;
 import java.sql.SQLException;
 
-import model.DTO.StudentByGroup;
+import model.StudentByGroup;
 
 public class StudentByGroupService {
 
@@ -92,6 +92,7 @@ public class StudentByGroupService {
             ps.close();
             connect.close();
         } catch (SQLException | ClassNotFoundException e) {
+            
             JOptionPane.showMessageDialog(null, "Erreur : de connexion ");
             logger.error(e.getMessage(), e);
 

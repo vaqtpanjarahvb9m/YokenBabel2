@@ -4,8 +4,7 @@
 
 package view;
 
-import java.awt.*;
-import java.awt.event.*;
+
 import java.awt.EventQueue;
 import java.awt.Font;
 import javax.swing.*;
@@ -22,6 +21,9 @@ import org.jdesktop.layout.LayoutStyle;
  * @author yoken & timothée
  */
 public class GraphLogin extends JFrame {
+    
+    
+    
     public GraphLogin() {
         initComponents();
     }
@@ -35,23 +37,27 @@ public class GraphLogin extends JFrame {
     }
 
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//        //Accueil frame = new Accueil();
+//        //frame.setVisible(true);
+//
+//        EventQueue.invokeLater(new Runnable() {
+//            public void run() {
+//                try {
+//                  //  WebLookAndFeel.install();
+//                    GraphLogin frame = new GraphLogin();
+//                    frame.setVisible(true);
+//                    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+//                } catch (Exception e) {
+//                   // e.printStackTrace();
+//                }
+//            }
+//        });
 
-        //Accueil frame = new Accueil();
-        //frame.setVisible(true);
-
-        EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                try {
-                  //  WebLookAndFeel.install();
-                    GraphLogin frame = new GraphLogin();
-                    frame.setVisible(true);
-                    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-                } catch (Exception e) {
-                   // e.printStackTrace();
-                }
-            }
-        });
+    private void initComponents() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     }
 
 
